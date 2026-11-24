@@ -1,91 +1,345 @@
 
-/* BASIC SETTINGS */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    color: #333333;
+/* General Styling */
+
+* {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-/* HEADER */
-header {
-    background-color: #222222;
-    color: white;
-    text-align: right;
-    padding: 25px 35px;
+body {
+    font-family: Arial, sans-serif;
+    background: #faf9ff;
+    color: #333;
 }
 
-header h1 {
-    font-size: 45px;
-    margin: 0;
-}
 
-header p {
-    font-size: 15px;
-}
+/* Navigation */
 
-header a {
-    color: white;
-    margin-left: 5px;
-}
-
-/* SECTIONS */
-section {
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
     background-color: white;
-    margin: 20px;
-    padding: 20px;
+    box-shadow: 0 2px 12px rgba(80, 50, 120, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-/* HEADINGS */
-h2 {
-    font-size: 22px;
-    color: #222222;
-    margin-bottom: 5px;
+nav h2 {
+    color: #7956a8;
+    font-size: 28px;
 }
 
-h3 {
-    font-size: 17px;
-    color: #333333;
+nav h2 span {
+    color: #c39ce8;
 }
 
-hr {
-    border: 1px solid #333333;
+.nav-links {
+    display: flex;
+    gap: 32px;
 }
 
-p {
-    font-size: 15px;
+.nav-links a {
+    text-decoration: none;
+    color: #444;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
-table {
-    border-collapse: collapse;
+.nav-links a:hover {
+    color: #916bc2;
 }
 
-td {
-    padding: 8px;
-    font-size: 15px;
-    vertical-align: top;
-}
+/* Home Section */
 
-/* DATE */
-.date {
-    text-align: right;
-    font-weight: bold;
-}
-
-/* LINKS */
-a {
-    color: #0645ad;
-}
-
-/* FOOTER */
-footer {
-    background-color: #222222;
-    color: white;
+.hero {
     text-align: center;
-    padding: 15px;
+    padding: 130px 20px;
+    background: linear-gradient(
+        135deg,
+        #f5efff,
+        #faf7ff,
+        #eee5fa
+    );
 }
 
+.tag {
+    display: inline-block;
+    color: #7956a8;
+    background: #eee3fb;
+    padding: 10px 20px;
+    border-radius: 25px;
+    letter-spacing: 2px;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
 
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 18px;
+    color: #333;
+}
 
+.hero h1 span {
+    color: #916bc2;
+}
+
+.hero h3 {
+    color: #666;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.intro {
+    max-width: 550px;
+    margin: auto;
+    line-height: 1.9;
+    color: #777;
+    font-size: 17px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 30px;
+    background: #7956a8;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #59377f;
+}
+
+/* Home */
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.tag {
+    color: #7956a8;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #916bc2;
+}
+
+.hero h3 {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.intro {
+    max-width: 550px;
+    margin: auto;
+    line-height: 1.8;
+    color: #777;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 13px 28px;
+    background: #7956a8;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.btn:hover {
+    background: #59377f;
+}
+
+/* Common Sections */
+
+section:not(.hero) {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+section h2 {
+    color: #7956a8;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+#about p {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.9;
+    color: #666;
+}
+
+/* Skills and Project Cards */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 28px;
+    margin: 12px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 18px rgba(80, 50, 120, 0.08);
+    max-width: 320px;
+    flex: 1 1 230px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #7956a8;
+    margin-bottom: 12px;
+}
+
+.card h4 {
+    color: #888;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.7;
+}
+
+.card small {
+    display: block;
+    color: #916bc2;
+    margin-top: 15px;
+}
+
+/* Internship Experience */
+
+.internship-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.internship-card {
+    background: white;
+    width: 45%;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 4px 18px rgba(80, 50, 120, 0.08);
+    text-align: left;
+}
+
+.internship-card h3 {
+    color: #7956a8;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.internship-card h4 {
+    color: #888;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.internship-card p {
+    color: #666;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* Contact */
+
+#contact button {
+    margin-top: 20px;
+    padding: 12px 28px;
+    background: #7956a8;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background: #59377f;
+}
+
+#message {
+    color: #7956a8;
+    margin-top: 15px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 22px;
+    background: #eee8f7;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Mobile Design */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .nav-links a {
+        margin: 0;
+    }
+
+    .hero {
+        padding: 85px 20px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    section:not(.hero) {
+        padding: 50px 6%;
+    }
+
+    /* Internship cards on mobile */
+
+    .internship-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .internship-card {
+        width: 100%;
+    }
+
+}
