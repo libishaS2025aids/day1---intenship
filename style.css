@@ -1,0 +1,91 @@
+
+/* BASIC SETTINGS */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: #222222;
+    color: white;
+    text-align: right;
+    padding: 25px 35px;
+}
+
+header h1 {
+    font-size: 45px;
+    margin: 0;
+}
+
+header p {
+    font-size: 15px;
+}
+
+header a {
+    color: white;
+    margin-left: 5px;
+}
+
+/* SECTIONS */
+section {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* HEADINGS */
+h2 {
+    font-size: 22px;
+    color: #222222;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 17px;
+    color: #333333;
+}
+
+hr {
+    border: 1px solid #333333;
+}
+
+p {
+    font-size: 15px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding: 8px;
+    font-size: 15px;
+    vertical-align: top;
+}
+
+/* DATE */
+.date {
+    text-align: right;
+    font-weight: bold;
+}
+
+/* LINKS */
+a {
+    color: #0645ad;
+}
+
+/* FOOTER */
+footer {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+
